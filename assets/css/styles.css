@@ -1,0 +1,204 @@
+/*ESTATICO*/
+/*SELECTOR POR ETIQUETA*/
+* {
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+   
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    
+}
+h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #808080;
+    
+    
+}
+
+
+/*MOVIL FIRST*/
+/*SELECTOR POR CLASE*/
+[class*="col-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+.botones{
+    display: inline-block;
+}
+.topnav a:hover{
+    background-color: #ddd;
+   
+}
+.active{
+    color: white;
+    font-family: 'Jost', sans-serif;
+    
+}
+.topnav sup{
+   font-size: 10px;
+   vertical-align: top;
+}
+.col-12{
+    margin-bottom: 2rem;
+}
+
+
+
+#profile img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-left: 70px;
+   
+}
+#seguidores{
+    padding-top: 0rem;
+}
+
+/*ESTILO HAMBURGUESA*/
+.topnav{
+    
+    position: relative;
+  
+}
+.topnav #mylinks{
+    display: none;
+    
+   
+    
+}
+.topnav a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    padding: 14px 16px;
+}
+.topnav a.icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+#mylinks a{
+    color: black;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+/*FIN HAMBURGUESA*/
+
+/*SELECTOR POR ID*/
+#txprofile{
+    display: inline-block;
+    margin-left: 65px;
+}
+#profile{
+    width: 50%;
+    display: inline-block;
+}
+#txprofile p{
+    color: #808080;
+}
+#fotos{
+    margin-left: 60px;
+    margin-right: 40px;
+    font-family: 'Lato', sans-serif;
+    
+}
+#margenfotos .col-3{
+    padding-left: 20px;
+}
+#margenfotos2 .col-3{
+    padding-left: 20px;
+}
+
+#btn-m{
+    background-color: #90e4c8;
+    color: white;
+    border-width: 0px;
+    width: 80px;
+    height: 30px;
+}
+#btn-s{
+    background-color: #dd7070;
+    color: white;
+    border-width: 0px;
+    width: 80px;
+    height: 30px
+}
+#padrebtn{
+    display: none;
+   
+    
+}
+
+/*BREAKPOINTS desktop*/
+/*regla para un min de px*/
+
+@media only screen and (min-width:768px){
+
+/*CLASE*/
+
+.col-1 {width: 7.33%;}
+.col-2 {width: 15.66%;}
+.col-3 {width: 24%;}
+.col-4 {width: 32.33%;}
+.col-5 {width: 40.66%;}
+.col-6 {width: 49%;}
+.col-7 {width: 57.33%;}
+.col-8 {width: 65.66%;}
+.col-9 {width: 74%;}
+.col-10 {width: 82.33%;}
+.col-11 {width: 90.66%;}
+.col-12 {width: 99%;}
+    
+
+.row{
+    display: block;
+}
+
+/*HAMBURGUESA*/
+.topnav a{
+    display: inline-block;
+    
+}    
+.topnav a.icon{
+    display: none;    
+}  
+.topnav #mylinks{
+    display: inline-block;
+   
+}
+/*FIN HAMBURGUESA*/
+
+    /*ID*/
+#profile{
+    width: 10%;
+}
+#padrebtn{
+    display: block;
+    text-align: start;
+   
+
+}
+
+
+}
